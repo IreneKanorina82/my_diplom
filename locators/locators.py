@@ -12,8 +12,7 @@ class MainPage(WebPage):
 
         super().__init__(web_driver, url)
 
-    btn_headers_menu = WebElement(xpath='//div[@id="menu-dropdown"]//span[contains(text(),"Меню")]')
     btn_headers_bad_vision = WebElement(xpath='//div[@id="bad_vision"]//span[contains(text(),"Версия для слабовидящих")]')
     btn_headers_cloud = WebElement(xpath='//div[@id="ffp-account"]//span[contains(text(),"Личный кабинет")]')
-    btn_headers_mail = WebElement(xpath='//div[@id="menu-item"]//span[contains(text(),"Почта")]')
-
+    btn_headers_mail = WebElement(xpath='//div[@id="lang-title"]//span[contains(text(),"Почта")]')
+    btn_headers_menu = WebElement(xpath='//div[@id="menu-dropdown"]//span[contains(text(),"Меню")]')
